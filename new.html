@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sama</title>
+</head>
+<body>
+<p><strong>Datos de interes</strong></p>
+<p><cite>Porcentaje de las personas de tu lista de amigos que han llenado el formulario</cite> en el dia <time datetime="2018-05-20"> 20 de mayo.</time></p>
+<p>
+	<meter min="0"max="100" value="90"></meter>
+</p>
+<p>
+	Las admisiones se cerraran el <time datetime="2018-06-24">dia martes 24 de junio</time><time datetime="17:00"> La hora limite sera hasta las 5pm</time>
+</p>
+<p>
+	Los datos proporcionados seran utilzados a modo de referencia.
+</p>
+<p>
+	Y como siempre dijo <cite>mi madre:</cite> <q>Anda vos y dale tus datos a extraños en el intrenet.</q>
+</p>
+<h3>Aqui algo de tekorei para probar el blockquote </h3>
+<p>
+<blockquote>
+	Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate, voluptatum. Quae laboriosam error debitis vitae in, repudiandae inventore alias voluptatem ipsam nulla provident quaerat nisi corporis, hic vel tempore ratione!
+</blockquote>
+</p>
+<h2> Algo para graficar con la barra</h2>
+<p>
+Gente que sigue viva luego de preoveer sus datos: <meter min="0" max="100" value="85" high="67" low="10"></meter>
+</p>
+<p>
+	Cargando tus prenguntas <progress max="100" value="10" id="barra"></progress><br>
+	<input type="button" value="cargar" onclick="setInterval(cargalo(),1000)">
+<script>
+	function cargalo(){
+	var= barra=document.getElementById("barra");
+		barra.value+=5;
+	}
+</script>
+</p>
+<h3>-----------------------------------------</h3>
+
+ <form action="index.html" method="post">
+ 	<p>
+ 	<label for="nombre"> Iingrese su nombre:</label><br>
+ 	 <input type="text" id="nombre" name="nombre" size="30" maxlength="30">
+    </p>
+	<p>
+		<label for="contrasena">Ingrese su contraseña:</label><br>
+		<input type="password" name="contrasena" id="contrasena" size="30" maxlength="20">
+	</p>
+	<h4>Indique su genero</h4>
+	<p>
+		<input type="radio" name="genero" value="hombre" id="genero_hom">
+		<label for="genero_hom">Hombre</label><br>
+		<input type="radio" name="genero" value="mujer" checked id="genero_muj">
+		<label for="genero_muj">Mujer</label>	
+	</p>
+	<h4>Dias Disponibles:</h4>
+	<p>
+		
+		<input type="checkbox" name="dias" id="domingo" value="domingo">Domingo<label for="domingo"></label><br>
+		<input type="checkbox" name="dias" id="lunes" value="lunes">Lunes<label for="lunes"></label><br>
+		<input type="checkbox" name="dias" id="martes" value="martes">Martes<label for="martes"></label><br>
+		<input type="checkbox" name="dias" id="miercoles" value="miercoles">Miercoles<label for="miercoles"></label><br>
+		<input type="checkbox" name="dias" id="jueves" value="jueves">Jueves<label for="jueves"></label><br>
+		<input type="checkbox" name="dias" id="viernes" value="viernes">Viernes<label for="viernes"></label><br>
+		<input type="checkbox" name="dias" id="sabado" value="sabado">Sabado<label for="sabado"></label><br>
+	</p>
+	<p>
+		<label for="buscar">Buscar:</label><br>
+		<input type="search" id="buscar" name="buscar" placeholder="ingrese su busqueda">
+	</p>
+	<p>
+		<label for="cantidad_prod">Cantidad de productos:</label><br>
+		<input type="number" name="cantidad_prod" id="cantidad_prod" min="2" max="10" step="1">
+	</p>
+	<p>
+	<label for="xp_info">Experiencia en informatica</label><br>
+	<input type="range" name="xp_info" id="xp_info" min="0" max="10">
+	</p>
+
+<p>
+	<label for="fecha_nac">Fecha de nacimiento:</label><br>
+	<input type="date" name="fecha_nac" id="fecha_nac" >
+</p>
+<p>
+	<label for="hora_entrega">Horario preferible para la entrega:</label><br>
+	<input type="time" name="hora_entrega" id="hora_entrega" value="12:00:00">
+</p>
+<p>
+	<label for="micolor">Cual es tu color favorito
+	</label><br>
+	<input type="color" name="micolor" id="micolor">
+</p>
+<p>
+	<label for="bio">Haga su consulta:</label><br>
+	<textarea name="bio" id="bio" cols="10" rows="02">
+	</textarea>
+</p>
+<p>
+<label for="estado">Seleccione su estado:</label>
+<select name="estado" id="estado">
+	<option value="viudo">Viudo</option><br>
+	<option value="casado">Casado</option><br>
+	<option value="divorciado">Divorciado</option><br>
+	<option value="soltero">Soltero</option><br>
+</select>
+</p>
+<p>
+	<label for="publicidad">Como supiste de nosotros?</label>
+	<select name="publicidad" id="publicidad">
+			<optgroup label="online">
+				<option value="redes_soc">Redes sociales
+				</option>
+				<option value="spam"> Spam cancerigeno
+				</option>
+			</optgroup>
+			<optgroup label="offline">
+				<option value="periodcos">Periodicos
+				</option>
+				<option value="Paneles_pub">Paneles pblicitarios</option>
+			</optgroup>
+			<optgroup label="otros">
+				<option value="rec">Recomendaciones
+			    </option>
+			</optgroup>    
+	</select>
+
+
+
+
+</p>
+
+
+
+
+
+
+
+
+
+	<p>
+		<input type="submit" value="Envia tus datos">
+		<input type="reset" value="Vaciar Formulario">
+	</p>
+
+
+ </form>
+
+
+
+
+</body>
+</html>
